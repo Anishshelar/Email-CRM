@@ -1,0 +1,482 @@
+[
+  {
+    "message_id": "msg_001",
+    "sender": "alice.smith@greenlight-npo.org",
+    "subject": "Question about pricing",
+    "body": "Hi, I was looking at your enterprise plan. Do you offer discounts for non-profits? We are a registered 501(c)(3) and work with underserved communities.",
+    "timestamp": "2023-10-01T09:00:00Z",
+    "thread_id": "thread_alice_pricing"
+  },
+  {
+    "message_id": "msg_002",
+    "sender": "bob.jones@enterprise.net",
+    "subject": "URGENT: Production System Down",
+    "body": "Our production server is not responding since 08:50 UTC. We are losing approximately $10,000/minute. We need support immediately. This is a P0 incident.",
+    "timestamp": "2023-10-01T09:15:00Z",
+    "thread_id": "thread_bob_outage"
+  },
+  {
+    "message_id": "msg_003",
+    "sender": "spam.bot@marketing-guru.io",
+    "subject": "Boost your SEO by 300%",
+    "body": "Dear Sir/Madam, we can get you on the front page of Google in 24 hours for just $99. Limited offer! Click here to claim.",
+    "timestamp": "2023-10-01T09:30:00Z",
+    "thread_id": "thread_spam_001"
+  },
+  {
+    "message_id": "msg_004",
+    "sender": "charlie@fastlane-startup.com",
+    "subject": "Integration issue - 403 on /v2/events endpoint",
+    "body": "Hey team, I'm integrating the webhook pipeline but keep hitting a 403 on POST /v2/events. I've confirmed my API key is valid for /v1/. Is there a separate permission scope for v2? Our launch is in 48 hours.",
+    "timestamp": "2023-10-01T10:00:00Z",
+    "thread_id": "thread_charlie_api"
+  },
+  {
+    "message_id": "msg_005",
+    "sender": "alice.smith@greenlight-npo.org",
+    "subject": "Follow up: Non-profit discount",
+    "body": "Just checking in on my previous email regarding the non-profit discount. We have 12 staff members who would use the platform daily. Thanks, Alice.",
+    "timestamp": "2023-10-02T08:00:00Z",
+    "thread_id": "thread_alice_pricing"
+  },
+  {
+    "message_id": "msg_006",
+    "sender": "karen.w@retail-co.com",
+    "subject": "Refund Request - Order #88271",
+    "body": "I am extremely unhappy with the service. The dashboard has been loading slowly for 3 days and I missed two client deadlines because of it. I want a full refund for this month immediately.",
+    "timestamp": "2023-10-02T11:20:00Z",
+    "thread_id": "thread_karen_refund"
+  },
+  {
+    "message_id": "msg_007",
+    "sender": "newsletter@techdaily.com",
+    "subject": "Tech Daily: AI is taking over customer support",
+    "body": "In today's newsletter, we discuss the impact of LLMs on customer support workflows and what it means for teams in 2024...",
+    "timestamp": "2023-10-02T12:00:00Z",
+    "thread_id": "thread_newsletter_001"
+  },
+  {
+    "message_id": "msg_008",
+    "sender": "support@cloudvendor.com",
+    "subject": "Scheduled Maintenance - Action Required",
+    "body": "Please be advised that we will be performing critical infrastructure maintenance on Saturday at 2 AM EST. Downtime estimated at 45 minutes. Please notify your downstream clients.",
+    "timestamp": "2023-10-03T09:00:00Z",
+    "thread_id": "thread_vendor_maintenance"
+  },
+  {
+    "message_id": "msg_009",
+    "sender": "bob.jones@enterprise.net",
+    "subject": "Re: URGENT: Production System Down",
+    "body": "The system appears to be recovering, but we experienced 47 minutes of downtime. Per our SLA, this entitles us to a credit. I want a full root cause analysis report within 24 hours and a timeline of the incident.",
+    "timestamp": "2023-10-03T10:00:00Z",
+    "thread_id": "thread_bob_outage"
+  },
+  {
+    "message_id": "msg_010",
+    "sender": "partnerships@growthventures.io",
+    "subject": "Strategic Partnership Proposal",
+    "body": "We serve 4,000+ SMBs in Southeast Asia and believe there's a strong integration opportunity with your platform. We'd love to discuss a white-label or referral arrangement. Are you open to a call this week?",
+    "timestamp": "2023-10-03T14:00:00Z",
+    "thread_id": "thread_partnership_001"
+  },
+  {
+    "message_id": "msg_011",
+    "sender": "david.lee@freemail.com",
+    "subject": "Password Reset not working",
+    "body": "I forgot my password and the reset link in the email expired before I could use it. I've tried three times now. Please send a new one or manually reset my account: david.lee@freemail.com.",
+    "timestamp": "2023-10-04T08:45:00Z",
+    "thread_id": "thread_david_auth"
+  },
+  {
+    "message_id": "msg_012",
+    "sender": "sarah.connor@design-studio.io",
+    "subject": "Feature Request: Dark mode + custom branding",
+    "body": "Love the product! Two things that would make it perfect for us: 1) Dark mode for the dashboard, 2) Custom logo/color branding for client-facing reports. Are either of these on the roadmap?",
+    "timestamp": "2023-10-04T09:15:00Z",
+    "thread_id": "thread_sarah_feature"
+  },
+  {
+    "message_id": "msg_013",
+    "sender": "billing@saas-platform.com",
+    "subject": "Invoice #99283 Overdue - Service Suspension Warning",
+    "body": "Your payment for invoice #99283 ($1,240.00) failed on Oct 1st. This is the second failed attempt. Please update your payment method within 48 hours or your account will be suspended.",
+    "timestamp": "2023-10-04T10:00:00Z",
+    "thread_id": "thread_billing_001"
+  },
+  {
+    "message_id": "msg_014",
+    "sender": "alice.smith@greenlight-npo.org",
+    "subject": "Re: Non-profit discount - Decision Made",
+    "body": "Thanks for clarifying the 30% non-profit discount policy. We will proceed with the Standard plan for 10 seats. Can you send over the contract and onboarding docs?",
+    "timestamp": "2023-10-05T09:30:00Z",
+    "thread_id": "thread_alice_pricing"
+  },
+  {
+    "message_id": "msg_015",
+    "sender": "frank@weird-requests.com",
+    "subject": "Do you sell branded merchandise?",
+    "body": "I know you are a software company, but I really love your logo design. Any chance you sell branded merch? Socks, hoodies, mugs? I'm a big fan and would happily buy some.",
+    "timestamp": "2023-10-05T11:00:00Z",
+    "thread_id": "thread_frank_merch"
+  },
+  {
+    "message_id": "msg_016",
+    "sender": "security@alert-system.com",
+    "subject": "ALERT: Suspicious Login from Unknown Location",
+    "body": "We detected a login attempt to admin account from IP 175.45.176.3 (Pyongyang, North Korea) at 11:42 UTC. The attempt used valid credentials. Immediate action may be required.",
+    "timestamp": "2023-10-05T12:00:00Z",
+    "thread_id": "thread_security_001"
+  },
+  {
+    "message_id": "msg_017",
+    "sender": "hr@internal.com",
+    "subject": "Company All-Hands + Holiday Party",
+    "body": "Reminder: All-hands is Thursday 3pm, holiday party is Friday at 5 PM in the main hall. RSVP by Wednesday so we can confirm catering numbers.",
+    "timestamp": "2023-10-05T13:00:00Z",
+    "thread_id": "thread_internal_hr"
+  },
+  {
+    "message_id": "msg_018",
+    "sender": "karen.w@retail-co.com",
+    "subject": "Re: Refund Request - STILL NO REPLY",
+    "body": "It has been 4 days and nobody has replied to me. I am going to post on Twitter, G2, and Trustpilot if I do not hear back within the next hour. This is completely unacceptable service.",
+    "timestamp": "2023-10-06T08:00:00Z",
+    "thread_id": "thread_karen_refund"
+  },
+  {
+    "message_id": "msg_019",
+    "sender": "investor@tier1-vc.com",
+    "subject": "Investment Interest - Series A",
+    "body": "We saw your product featured on ProductHunt (#2 of the day). Our fund has $200M AUM and focuses on B2B SaaS. We'd love to chat about your Series A. Are you currently raising?",
+    "timestamp": "2023-10-06T09:00:00Z",
+    "thread_id": "thread_investor_001"
+  },
+  {
+    "message_id": "msg_020",
+    "sender": "legal@competitor-corp.com",
+    "subject": "Cease and Desist Notice",
+    "body": "Your latest ad campaign uses the phrase 'Workflow Unleashed' which is a registered trademark of Competitor Corp (Reg. No. 5,234,112). Cease all use immediately or we will pursue legal action.",
+    "timestamp": "2023-10-06T10:30:00Z",
+    "thread_id": "thread_legal_001"
+  },
+  {
+    "message_id": "msg_021",
+    "sender": "eleanor.voss@healthcare-group.org",
+    "subject": "HIPAA Compliance Inquiry",
+    "body": "We are evaluating your platform for use in a clinical setting. We need to understand your HIPAA compliance posture: Do you offer BAAs? Is data encrypted at rest and in transit? Where are your servers hosted?",
+    "timestamp": "2023-10-06T11:00:00Z",
+    "thread_id": "thread_eleanor_compliance"
+  },
+  {
+    "message_id": "msg_022",
+    "sender": "bob.jones@enterprise.net",
+    "subject": "New Feature Request: API Rate Limit Increase",
+    "body": "Now that the outage is resolved, we need to talk about our API limits. We're hitting the 1,000 req/min ceiling daily during peak hours. We need at least 5,000 req/min for our tier. What are the options?",
+    "timestamp": "2023-10-07T09:00:00Z",
+    "thread_id": "thread_bob_api_limits"
+  },
+  {
+    "message_id": "msg_023",
+    "sender": "student@mit.edu",
+    "subject": "Research Collaboration Inquiry",
+    "body": "I'm an AI/ML PhD student at MIT researching LLM applications in CRM systems. I would love to discuss a potential research collaboration or access to anonymized datasets for my thesis. Is there a research team I can connect with?",
+    "timestamp": "2023-10-07T10:00:00Z",
+    "thread_id": "thread_research_001"
+  },
+  {
+    "message_id": "msg_024",
+    "sender": "marketing@spammy-outreach.com",
+    "subject": "Collab opportunity??",
+    "body": "Hey! Let's collab. You post about us on LinkedIn (100k followers!), we post about you. Pure win-win. DM me.",
+    "timestamp": "2023-10-07T14:00:00Z",
+    "thread_id": "thread_spam_002"
+  },
+  {
+    "message_id": "msg_025",
+    "sender": "user123@gmail.com",
+    "subject": "Critical Bug: App crashes on Save",
+    "body": "When I click 'Save' on any report with more than 50 rows, the app crashes and I lose all my work. Steps to reproduce: 1) Create report, 2) Add 51+ rows, 3) Click Save. 100% reproducible. Browser: Chrome 118, OS: macOS 14.",
+    "timestamp": "2023-10-08T08:00:00Z",
+    "thread_id": "thread_bug_save"
+  },
+  {
+    "message_id": "msg_026",
+    "sender": "user456@yahoo.com",
+    "subject": "Login broken - Server Error 500",
+    "body": "Can't log in at all since this morning. The page shows 'Server Error 500' after I submit credentials. I've cleared cache and cookies. My account is user456@yahoo.com.",
+    "timestamp": "2023-10-08T08:05:00Z",
+    "thread_id": "thread_bug_login"
+  },
+  {
+    "message_id": "msg_027",
+    "sender": "user789@hotmail.com",
+    "subject": "Chat widget broken on your homepage",
+    "body": "Just wanted to flag: the live chat widget on your homepage (the bottom-right bubble) throws a JavaScript error when clicked. I was trying to ask a pre-sales question. Console error: 'Uncaught TypeError: Cannot read properties of undefined'.",
+    "timestamp": "2023-10-08T08:10:00Z",
+    "thread_id": "thread_bug_widget"
+  },
+  {
+    "message_id": "msg_028",
+    "sender": "charlie@fastlane-startup.com",
+    "subject": "Re: Integration issue - Resolved",
+    "body": "Figured it out! I was missing the 'X-Workspace-ID' header on v2 requests. The docs don't mention this - might be worth updating. Thanks for the support anyway, we're live!",
+    "timestamp": "2023-10-08T09:00:00Z",
+    "thread_id": "thread_charlie_api"
+  },
+  {
+    "message_id": "msg_029",
+    "sender": "procurement@bigcorp-global.com",
+    "subject": "RFP: Enterprise Software Overhaul - Due Oct 30",
+    "body": "BigCorp (5,000 employees, 22 countries) invites you to submit a proposal for our CRM and workflow tooling overhaul. Estimated contract value: $2.4M/year. RFP document and requirements attached. Submission deadline: October 30th.",
+    "timestamp": "2023-10-09T09:00:00Z",
+    "thread_id": "thread_bigcorp_rfp"
+  },
+  {
+    "message_id": "msg_030",
+    "sender": "legal@bigcorp-global.com",
+    "subject": "Security Compliance Questionnaire - Required for RFP",
+    "body": "As part of the RFP process, please complete the attached ISO 27001 and SOC 2 Type II compliance questionnaire. We also require your latest penetration test report and data residency documentation.",
+    "timestamp": "2023-10-09T10:00:00Z",
+    "thread_id": "thread_bigcorp_rfp"
+  },
+  {
+    "message_id": "msg_031",
+    "sender": "prince.nigeria@wealth-transfer.com",
+    "subject": "CONFIDENTIAL: Inheritance of $50,000,000 USD",
+    "body": "I am Prince Adewale. I have $50 million USD for you. Please send your bank account details and a processing fee of $500 to claim your share.",
+    "timestamp": "2023-10-09T11:00:00Z",
+    "thread_id": "thread_spam_003"
+  },
+  {
+    "message_id": "msg_032",
+    "sender": "noreply@ourplatform.com",
+    "subject": "Auto-Reply: Support Ticket #11042 Received",
+    "body": "We have received your support request (Ticket #11042) and will respond within 4 business hours. For urgent issues, call our hotline.",
+    "timestamp": "2023-10-09T12:00:00Z",
+    "thread_id": "thread_autoreply_001"
+  },
+  {
+    "message_id": "msg_033",
+    "sender": "karen.w@retail-co.com",
+    "subject": "Final Warning Before Public Review",
+    "body": "I have now sent 3 emails with zero human response. I am cancelling my subscription today and will be leaving detailed negative reviews on G2, Capterra, and Trustpilot. My account is karen.w@retail-co.com.",
+    "timestamp": "2023-10-10T08:00:00Z",
+    "thread_id": "thread_karen_refund"
+  },
+  {
+    "message_id": "msg_034",
+    "sender": "accounting@mycompany.com",
+    "subject": "September Expense Report Approved",
+    "body": "Your expense report for September ($3,240.00) has been approved and will be reimbursed in the next payroll cycle.",
+    "timestamp": "2023-10-10T09:00:00Z",
+    "thread_id": "thread_internal_accounting"
+  },
+  {
+    "message_id": "msg_035",
+    "sender": "devops@internal.com",
+    "subject": "Production Deployment v2.1.0 - Success",
+    "body": "Production deployment v2.1.0 completed successfully at 09:47 UTC. All health checks passing. Rollback window closes in 2 hours.",
+    "timestamp": "2023-10-10T10:00:00Z",
+    "thread_id": "thread_internal_devops"
+  },
+  {
+    "message_id": "msg_036",
+    "sender": "manager@internal.com",
+    "subject": "Reschedule 1:1?",
+    "body": "Can we move our 1:1 from today 3pm to tomorrow 10am? Something came up with the BigCorp RFP prep.",
+    "timestamp": "2023-10-10T11:00:00Z",
+    "thread_id": "thread_internal_mgmt"
+  },
+  {
+    "message_id": "msg_037",
+    "sender": "feedback@happycustomer.com",
+    "subject": "Love the product - iOS app suggestion",
+    "body": "Quick note: absolutely love the platform, it's transformed our reporting workflow. One strong request from our whole team - a native iOS app would be a game-changer for us. Any plans for mobile?",
+    "timestamp": "2023-10-11T09:00:00Z",
+    "thread_id": "thread_feedback_ios"
+  },
+  {
+    "message_id": "msg_038",
+    "sender": "hacker@anon-collective.net",
+    "subject": "We have your data - Pay Now",
+    "body": "We have exfiltrated 50,000 customer records from your database. Send 2 BTC to wallet 1A2b3C4d5E6f within 48 hours or we publish the data on the dark web.",
+    "timestamp": "2023-10-11T12:00:00Z",
+    "thread_id": "thread_security_002"
+  },
+  {
+    "message_id": "msg_039",
+    "sender": "sales@coldoutreach.com",
+    "subject": "Quick question for the right person",
+    "body": "Hi there - just want to make sure I'm reaching the right person. Are you responsible for software purchasing decisions at your company? Happy to keep it brief.",
+    "timestamp": "2023-10-12T09:00:00Z",
+    "thread_id": "thread_spam_004"
+  },
+  {
+    "message_id": "msg_040",
+    "sender": "noreply@github.com",
+    "subject": "Build Failed: PR #405 - payment-module",
+    "body": "The CI build for PR #405 (branch: feat/payment-module) failed at step 'Run Tests'. 3 tests failed: test_charge_webhook, test_refund_flow, test_idempotency_key. Check logs for details.",
+    "timestamp": "2023-10-12T10:00:00Z",
+    "thread_id": "thread_internal_ci"
+  },
+  {
+    "message_id": "msg_041",
+    "sender": "alice.smith@greenlight-npo.org",
+    "subject": "Upgrade Question: Pro-rata billing",
+    "body": "Hi again! We've grown faster than expected and need to add 5 more seats mid-cycle. If I upgrade to the larger plan now, will we be charged pro-rata for the remaining days this month?",
+    "timestamp": "2023-10-13T09:00:00Z",
+    "thread_id": "thread_alice_pricing"
+  },
+  {
+    "message_id": "msg_042",
+    "sender": "bob.jones@enterprise.net",
+    "subject": "API Limits - Meeting Notes",
+    "body": "Following up on yesterday's call. To confirm: you'll review our account for an Enterprise tier upgrade with 10k req/min limit. We need written confirmation of the new rate limit SLA before our board meeting on Oct 20.",
+    "timestamp": "2023-10-13T10:00:00Z",
+    "thread_id": "thread_bob_api_limits"
+  },
+  {
+    "message_id": "msg_043",
+    "sender": "info@globaltech-summit.com",
+    "subject": "Speaker Invitation: GlobalTech Summit 2024",
+    "body": "We'd like to invite your CTO to deliver a keynote at GlobalTech Summit 2024 (Feb 14-16, Dubai, 3,000 attendees). Topic: 'AI in Customer Operations'. We cover travel, accommodation, and an honorarium. Interested?",
+    "timestamp": "2023-10-13T11:00:00Z",
+    "thread_id": "thread_speaker_invite"
+  },
+  {
+    "message_id": "msg_044",
+    "sender": "support@software.com",
+    "subject": "Ticket #9921 Closed - Inactivity",
+    "body": "Your support ticket #9921 ('Export function timeout') has been automatically closed due to 14 days of inactivity. If the issue persists, please open a new ticket.",
+    "timestamp": "2023-10-14T09:00:00Z",
+    "thread_id": "thread_autoreply_002"
+  },
+  {
+    "message_id": "msg_045",
+    "sender": "angry.user@domain.com",
+    "subject": "DELETE MY ACCOUNT NOW",
+    "body": "WORST EXPERIENCE EVER. Your support is nonexistent, the product is broken, and I've wasted 3 weeks. Delete my account (angry.user@domain.com) immediately and refund my last 2 months. I will NEVER use this again.",
+    "timestamp": "2023-10-14T12:00:00Z",
+    "thread_id": "thread_angry_churn"
+  },
+  {
+    "message_id": "msg_046",
+    "sender": "renewals@service.com",
+    "subject": "Your subscription renews in 3 days",
+    "body": "This is a reminder that your Pro subscription ($299/month) will automatically renew on October 18. To cancel or modify, visit your billing portal.",
+    "timestamp": "2023-10-15T09:00:00Z",
+    "thread_id": "thread_billing_002"
+  },
+  {
+    "message_id": "msg_047",
+    "sender": "admin@platform.com",
+    "subject": "New Enterprise User Registration",
+    "body": "A new user 'carlos.mendez@bigcorp-global.com' has registered under the BigCorp Enterprise account. They have been auto-assigned the 'Viewer' role. Verify if 'Admin' access is required.",
+    "timestamp": "2023-10-15T10:00:00Z",
+    "thread_id": "thread_bigcorp_rfp"
+  },
+  {
+    "message_id": "msg_048",
+    "sender": "api-team@integration-partner.com",
+    "subject": "API v1 Deprecation - Migration Required by Dec 31",
+    "body": "IMPORTANT: API v1 will be sunset on December 31, 2023. All integrations must migrate to v2. Breaking changes include: new auth header format, paginated responses, and webhook signature validation. Migration guide enclosed.",
+    "timestamp": "2023-10-15T11:00:00Z",
+    "thread_id": "thread_api_deprecation"
+  },
+  {
+    "message_id": "msg_049",
+    "sender": "office@building-mgmt.com",
+    "subject": "Mandatory Fire Drill - Today 2 PM",
+    "body": "There will be a mandatory fire drill today at 2 PM. Please ensure all staff evacuate via the nearest stairwell. Do not use elevators. Assembly point: Car Park B.",
+    "timestamp": "2023-10-16T08:00:00Z",
+    "thread_id": "thread_internal_facilities"
+  },
+  {
+    "message_id": "msg_050",
+    "sender": "ceo@company.com",
+    "subject": "All Hands - Special Announcement at 4 PM Today",
+    "body": "Team, please join the all-hands at 4 PM via the usual link. We have a significant company announcement. Attendance is mandatory. - CEO",
+    "timestamp": "2023-10-16T09:00:00Z",
+    "thread_id": "thread_internal_allhands"
+  },
+  {
+    "message_id": "msg_051",
+    "sender": "eleanor.voss@healthcare-group.org",
+    "subject": "Re: HIPAA Compliance - Urgent Decision Needed",
+    "body": "Following up on our HIPAA inquiry. Our board meets next Friday and we need your compliance documentation by Thursday. If you cannot provide a BAA and evidence of HIPAA controls, we will have to select a different vendor. This is a 200-seat deal.",
+    "timestamp": "2023-10-16T14:00:00Z",
+    "thread_id": "thread_eleanor_compliance"
+  },
+  {
+    "message_id": "msg_052",
+    "sender": "marcus.del@fintech-startup.co",
+    "subject": "Data Export: GDPR Right to Portability Request",
+    "body": "Under GDPR Article 20, I am formally requesting a complete export of all personal data your platform holds about me (account: marcus.del@fintech-startup.co). Please provide this within the statutory 30-day window.",
+    "timestamp": "2023-10-17T08:00:00Z",
+    "thread_id": "thread_gdpr_001"
+  },
+  {
+    "message_id": "msg_053",
+    "sender": "bot@review-scraper.io",
+    "subject": "Your G2 review score dropped",
+    "body": "Alert: Your G2 rating dropped from 4.7 to 4.4 in the last 7 days. 3 new 1-star reviews mention 'slow support response'. We track your competitors too: CompetitorX is now at 4.6.",
+    "timestamp": "2023-10-17T09:00:00Z",
+    "thread_id": "thread_reputation_alert"
+  },
+  {
+    "message_id": "msg_054",
+    "sender": "nadia.k@global-logistics.com",
+    "subject": "Bulk Data Import Failing Silently",
+    "body": "We are importing 50,000 records via your CSV bulk upload feature. The upload says 'Success' but only 12,340 records appear in the system. No error log is generated. This is mission-critical data for our Q4 operations.",
+    "timestamp": "2023-10-17T10:00:00Z",
+    "thread_id": "thread_nadia_bug"
+  },
+  {
+    "message_id": "msg_055",
+    "sender": "press@techcrunch-media.com",
+    "subject": "Media Inquiry: Comment on Industry Trend Piece",
+    "body": "Hi, I'm a reporter at TechCrunch writing about the AI customer support automation space. Would someone from your leadership team be available for a 20-minute quote interview by EOD Thursday? Piece publishes next Monday.",
+    "timestamp": "2023-10-18T09:00:00Z",
+    "thread_id": "thread_press_001"
+  },
+  {
+    "message_id": "msg_056",
+    "sender": "user.confused@hotmail.com",
+    "subject": "Your chatbot told me something wrong",
+    "body": "Your AI chatbot on the support page told me I could cancel anytime and get a prorated refund. But when I tried, billing said no refunds. Which is it? I have a screenshot of the chatbot conversation.",
+    "timestamp": "2023-10-18T10:00:00Z",
+    "thread_id": "thread_chatbot_misinformation"
+  },
+  {
+    "message_id": "msg_057",
+    "sender": "raj.patel@consulting-firm.in",
+    "subject": "White-label Reseller Inquiry",
+    "body": "Our consulting firm works with 80+ clients across India and Southeast Asia. We are interested in a white-label reseller agreement where we can brand the platform as our own and set our own pricing. Do you have a reseller program?",
+    "timestamp": "2023-10-18T11:00:00Z",
+    "thread_id": "thread_reseller_001"
+  },
+  {
+    "message_id": "msg_058",
+    "sender": "linda.wu@edu-institute.org",
+    "subject": "Academic License Request",
+    "body": "I manage software licensing for a university with 15,000 students. We would like to use your platform for a data analytics course (200 students per semester). Do you offer academic or educational pricing?",
+    "timestamp": "2023-10-19T09:00:00Z",
+    "thread_id": "thread_academic_license"
+  },
+  {
+    "message_id": "msg_059",
+    "sender": "devops@internal.com",
+    "subject": "Memory Leak in Worker Process - Production Alert",
+    "body": "Production alert: Worker process memory usage has climbed to 94% over the last 6 hours. Likely related to the v2.1.0 deployment. Recommend immediate investigation. Auto-scaling has kicked in but costs are rising fast.",
+    "timestamp": "2023-10-19T10:00:00Z",
+    "thread_id": "thread_internal_devops"
+  },
+  {
+    "message_id": "msg_060",
+    "sender": "bob.jones@enterprise.net",
+    "subject": "Escalation: SLA Breach + Legal Review",
+    "body": "We have reviewed the October 1st incident report you provided. The RCA is inadequate - it does not address the root cause or corrective actions. Our legal team is now involved. Please expect formal correspondence. We are also putting the renewal on hold pending resolution.",
+    "timestamp": "2023-10-19T14:00:00Z",
+    "thread_id": "thread_bob_outage"
+  }
+]
