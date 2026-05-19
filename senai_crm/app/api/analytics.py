@@ -92,7 +92,7 @@ def _longest_consecutive_negative(scores: list[float]) -> int:
 )
 def sentiment_trend(
     sender: str = Query(..., description="Sender email address"),
-    days: int = Query(30, ge=1, le=365, description="Look-back window in days"),
+    days: int = Query(30, ge=0, le=3650, description="Look-back window in days; 0 = all time"),
     db: Session = Depends(get_db),
 ) -> SentimentTrendResponse:
     """
@@ -101,18 +101,14 @@ def sentiment_trend(
     hard-stopped by the rule engine) are excluded from the series but do not
     affect accuracy — they carry no emotional signal.
     """
-    cutoff = datetime.now(tz=timezone.utc) - timedelta(days=days)
-
-    rows = (
-        db.query(Email)
-        .filter(
-            Email.sender == sender,
-            Email.timestamp >= cutoff,
-            Email.sentiment_score.isnot(None),
-        )
-        .order_by(Email.timestamp.asc())
-        .all()
+    q = db.query(Email).filter(
+        Email.sender == sender,
+        Email.sentiment_score.isnot(None),
     )
+    if days > 0:
+        cutoff = datetime.now(tz=timezone.utc) - timedelta(days=days)
+        q = q.filter(Email.timestamp >= cutoff)
+    rows = q.order_by(Email.timestamp.asc()).all()
 
     data_points = [
         SentimentDataPoint(

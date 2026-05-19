@@ -152,6 +152,44 @@ def _fetch_thread_history(db: Session, thread_db_id: int, exclude_message_id: st
     ]
 
 
+def _update_churn_risk(db: Session, contact: Contact) -> None:
+    """
+    Recompute and persist churn_risk_score for a contact after each new email.
+
+    Score formula:
+      - Fetch all classified (sentiment_score not null) emails from this sender.
+      - base_risk = negative_count / total_count  (0.0 – 1.0)
+      - If the longest consecutive-negative run >= 3, add a 0.3 penalty (capped at 1.0).
+    """
+    rows = (
+        db.query(Email.sentiment_score)
+        .filter(
+            Email.sender == contact.email,
+            Email.sentiment_score.isnot(None),
+        )
+        .order_by(Email.timestamp.asc())
+        .all()
+    )
+    if not rows:
+        return
+
+    scores = [r[0] for r in rows]
+    negative_count = sum(1 for s in scores if s < 0)
+    base_risk = negative_count / len(scores)
+
+    # Consecutive-negative run penalty
+    max_run = run = 0
+    for s in scores:
+        if s < 0:
+            run += 1
+            max_run = max(max_run, run)
+        else:
+            run = 0
+    penalty = 0.3 if max_run >= 3 else 0.0
+
+    contact.churn_risk_score = min(1.0, round(base_risk + penalty, 4))
+
+
 def _derive_email_status(rule_flags: dict, requires_human: bool) -> EmailStatus:
     if rule_flags.get("skip_llm_pipeline"):
         cat = rule_flags.get("category", "")
@@ -267,6 +305,9 @@ def ingest_email(
 
     db.commit()
     db.refresh(email_row)
+
+    _update_churn_risk(db, contact)
+    db.commit()
 
     logger.info(
         "Ingested %s | priority=%d | category=%s | requires_human=%s | status=%s",

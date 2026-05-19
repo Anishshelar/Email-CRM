@@ -72,10 +72,45 @@ class GeminiClient:
         return response.text
 
 
-def get_default_client() -> GeminiClient:
+class GroqClient:
+    """
+    Production Groq client using llama-3.1-8b-instant (or configured model).
+    Uses JSON mode via response_format={"type": "json_object"}.
+    """
+
+    def __init__(
+        self,
+        api_key: str | None = None,
+        model: str | None = None,
+    ) -> None:
+        from groq import Groq
+
+        api_key = api_key or settings.groq_api_key
+        if not api_key:
+            raise ValueError(
+                "GROQ_API_KEY is not set. Add it to .env before using the "
+                "classification service."
+            )
+        self._model = model or settings.groq_model
+        self._client = Groq(api_key=api_key)
+        logger.info("GroqClient initialised with model=%s", self._model)
+
+    def generate(self, prompt: str) -> str:
+        response = self._client.chat.completions.create(
+            model=self._model,
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"},
+            temperature=0.1,
+            max_tokens=1024,
+        )
+        return response.choices[0].message.content
+
+
+def get_default_client() -> GeminiClient | GroqClient:
     """
     Factory for the singleton production client.
-    Call once at app startup (e.g. in a FastAPI lifespan handler) and inject
-    the result into ClassificationService.
+    Selects Groq or Gemini based on LLM_PROVIDER in .env.
     """
+    if settings.llm_provider.lower() == "groq":
+        return GroqClient()
     return GeminiClient()

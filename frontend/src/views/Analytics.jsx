@@ -46,6 +46,7 @@ function SentimentTrend() {
           value={days}
           onChange={(e) => setDays(Number(e.target.value))}
         >
+          <option value={0}>All time</option>
           <option value={7}>7 days</option>
           <option value={30}>30 days</option>
           <option value={90}>90 days</option>
